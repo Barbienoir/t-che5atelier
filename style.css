@@ -1,0 +1,54 @@
+*{ font-family: "Amatic SC", sans-serif }
+#header {
+  background: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+  font-size: 28px;
+  font-weight: bold;
+  color: #212529;
+  text-decoration: none;
+}
+
+.logo a span {
+  color: red;
+}
+
+.navbar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+  white-space: nowrap;
+  padding: 10px 15px;
+}
+
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: red;
+}
+
+.book-a-table-btn {
+  background: red;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.fa-calendar{
+    color: red;
+    font-size: 30px;
+}
