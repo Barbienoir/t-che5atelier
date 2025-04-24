@@ -1,54 +1,88 @@
-*{ font-family: "Amatic SC", sans-serif }
-#header {
-  background: #fff;
-  padding: 15px 0;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-}
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Annapurna+SIL:wght@400;700&family=Jacquard+24&family=Jacquarda+Bastarda+9&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  font-family: roboto,sans sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
 
-.logo a {
-  font-size: 28px;
-  font-weight: bold;
-  color: #212529;
-  text-decoration: none;
+  .login-button{
+    padding: 8px 16px;
+    border-radius:10px;
+    background-color: red;
+  }
+.h1{
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  
+  margin-top: 20px;
+  color: black;
 }
-
-.logo a span {
-  color: red;
-}
-
-.navbar ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
-}
-
-.navbar li {
+  
+.nav-link {
   position: relative;
-  white-space: nowrap;
-  padding: 10px 15px;
+  padding-bottom: 5px;
+  transition: color 0.3s;
 }
 
-.navbar a {
-  color: #444;
-  text-decoration: none;
-  font-weight: 500;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+  transition: width 0.3s;
 }
 
-.navbar a:hover,
-.navbar .active {
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.custom-link:hover,
+.nav-link.custom-link.active {
   color: red;
 }
-
-.book-a-table-btn {
-  background: red;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
+/*  */
+.enjoy{
+  background-color: rgb(218, 216, 216);
+  width: 100%;
+  height: 100vh;
 }
-.fa-calendar{
-    color: red;
-    font-size: 30px;
+.survol{
+  transition: 0.6s;
 }
+ .survol img:hover{
+  transform: translateY(-15px);
+ }
+ /* ABOUT */
+ span{
+  color: red;
+ }
+ .fa-check{
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  color: white;
+  padding: 3px;
+ }
+ .img-vidéo{
+  position: relative;
+ background-image: url(./image/about.jpg);
+  width: 450px;
+  height: 45vh;
+ } 
+ .youtube{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+ 
+ }
+ /* card */
+ .bgred{
+  background-color: #CE1212;
+ }
+ 
